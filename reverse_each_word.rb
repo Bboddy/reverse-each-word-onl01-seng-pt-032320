@@ -1,6 +1,6 @@
 def reverse_each_word(s)
   sArray = s.split
   s = ""
-  sArray.each_with_index {|word, index| s << "#{word.reverse} "}
+  sArray.each {|word| s << word.reverse.join(" ")}
   return s
 end
